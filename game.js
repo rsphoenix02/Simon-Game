@@ -36,7 +36,7 @@ function checkAnswer(currentLevel){
     setTimeout(function(){
       $("body").removeClass("game-over");
     }, 200);
-    new Audio("sounds/wrong.mp3").play();
+    new Audio("wrong.mp3").play();
     startOver();
   }
 }
@@ -60,7 +60,7 @@ function animatePress(currentColor){
 }
 
 function playSound(name){
-  new Audio("sounds/" + name + ".mp3").play();
+  new Audio(name + ".mp3").play();
 }
 
 function startOver(){
